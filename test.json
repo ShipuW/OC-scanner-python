@@ -1,0 +1,1028 @@
+{
+  "options": {
+    "search_paths": [
+      "CunTao/CunTao/Class",
+      "Pods/TradeManager-Taobao"
+    ]
+  },
+  "groups": [
+    {
+      "page": {
+        "track": "login_home",
+        "name": "APP登录首页",
+        "ignored": true
+      },
+      "controls": [
+        {
+          "track": "switch_account",
+          "method": "",
+          "name": "切换账号",
+          "class": "",
+        "ignored": true
+        },
+        {
+          "track": "login",
+          "method": "",
+          "name": "登录按钮",
+          "class": "",
+        "ignored": true
+        },
+        {
+          "track": "registration",
+          "method": "appearanceOfRegisterPage:",
+          "name": "快速注册",
+          "class": "CTLoginAdapter"
+        },
+        {
+          "track": "retrieve_password",
+          "method": "appearanceOfH5Page:",
+          "name": "找回密码",
+          "class": "CTLoginAdapter"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "app_home",
+        "name": "APP首页"
+      },
+      "controls": [
+        {
+          "track": "sweep",
+          "method": "onNavBarScanButtonClick:",
+          "name": "扫一扫",
+          "class": "HomeViewInteractor"
+        },
+        {
+          "track": "message_center",
+          "method": "onNavBarMessageButtonClick:",
+          "name": "消息中心",
+          "class": "HomeViewInteractor"
+        },
+        {
+          "track": "arrow",
+          "method": "backgroudClick",
+          "name": "代购人模块箭头",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "guide_login",
+          "method": "backgroudClick",
+          "name": "代购人模块进入登录",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "guide_station",
+          "method": "backgroudClick",
+          "name": "代购人模块进入绑定代购点页面",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "choose_goods",
+          "method": "agentButtonClick:",
+          "name": "选品代购",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "contact_agent",
+          "method": "chatButtonClick:",
+          "name": "找代购员",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "logistic_sassistant",
+          "method": "expressButtonClick:",
+          "name": "物流助手",
+          "class": "AgentInteractor"
+        },
+        {
+          "track": "banner%d",
+          "method": "initWithFrame:",
+          "name": "banner",
+          "class": "HomeBannerCell"
+        },
+        {
+          "track": "commodity_group%d",
+          "method": "collectionView:didSelectItemAtIndexPath:",
+          "name": "商品团",
+          "class": "HomeViewInteractor"
+        },
+        {
+          "track": "daily_products%d",
+          "method": "collectionView:didSelectItemAtIndexPath:",
+          "name": "每日精选",
+          "class": "HomeViewInteractor"
+        },
+        {
+          "track": "pull_up",
+          "method": "",
+          "name": "首页往上拉查看历史每日精选",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "drop_down",
+          "method": "addRefreshLogic",
+          "name": "下拉刷新",
+          "class": "HomeViewController"
+        },
+        {
+          "track": "app_home_tab",
+          "method": "tabBarController:didSelectViewController:",
+          "name": "首页tab",
+          "class": "CTAppDependencies"
+        },
+        {
+          "track": "special_preferential_tab",
+          "method": "tabBarController:didSelectViewController:",
+          "name": "特惠专场",
+          "class": "CTAppDependencies"
+        },
+        {
+          "track": "contact_agent_tab",
+          "method": "tabBarController:didSelectViewController:",
+          "name": "找代购人",
+          "class": "CTAppDependencies"
+        },
+        {
+          "track": "my_agent_tab",
+          "method": "tabBarController:didSelectViewController:",
+          "name": "我的代购",
+          "class": "CTAppDependencies"
+        },
+        {
+          "track": "back_top",
+          "method": "toTop:",
+          "name": "回到顶部",
+          "class": "HomeViewController"
+        },
+        {
+          "track": "agent_car_tab",
+          "method": "tabBarController:didSelectViewController:",
+          "name": "代购车tab",
+          "class": "CTAppDependencies"
+        },
+        {
+          "track": "search",
+          "method": "onNavBarSearchBarClick:",
+          "name": "搜索输入框",
+          "class": "HomeViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "productdetail",
+        "name": "产品详情页"
+      },
+      "controls": [
+        {
+          "track": "figure_sliding",
+          "method": "setupView",
+          "name": "主图滑动",
+          "class": "ProductDetailViewController"
+        },
+        {
+          "track": "choose_size",
+          "method": "onSkusButtonClicked:",
+          "name": "选择尺码、颜色",
+          "class": "ProductDetailViewInteractor"
+        },
+        {
+          "track": "pull_up",
+          "method": "scrollViewWillEndDragging:withVelocity:targetContentOffset:",
+          "name": "往上拉查看图文详情",
+          "class": "ProductDetailViewInteractor"
+        },
+        {
+          "track": "contact_agent",
+          "method": "onContactBuyerButtonClicked:",
+          "name": "联系代购员",
+          "class": "ProductDetailViewInteractor"
+        },
+        {
+          "track": "please_purchase",
+          "method": "onSendToBuyerButtonClicked:",
+          "name": "请人代购",
+          "class": "ProductDetailViewInteractor"
+        },
+        {
+          "track": "graphic_details_tab",
+          "method": "onTabButtonClicked:",
+          "name": "图文详情tab",
+          "class": "ProductMoreDetailViewInteractor"
+        },
+        {
+          "track": "product_parameters_tab",
+          "method": "onTabButtonClicked:",
+          "name": "产品参数tab",
+          "class": "ProductMoreDetailViewInteractor"
+        },
+        {
+          "track": "product_reviews_tab",
+          "method": "onTabButtonClicked:",
+          "name": "产品评论tab",
+          "class": "ProductMoreDetailViewInteractor"
+        },
+        {
+          "track": "back_top",
+          "method": "onScrollToTopButtonClicked:",
+          "name": "顶部按钮",
+          "class": "ProductDetailViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "productdetail_select_properties",
+        "name": "选择属性页面"
+      },
+      "controls": [
+        {
+          "track": "purchases_increase",
+          "method": "stepperView:userClickAdd:",
+          "name": "购买数量增加",
+          "class": "ProductSkusViewInteractor"
+        },
+        {
+          "track": "purchases_reduce",
+          "method": "stepperView:userClickMinus:",
+          "name": "购买数量减少",
+          "class": "ProductSkusViewInteractor"
+        },
+        {
+          "track": "please_purchase",
+          "method": "onSkusBuyButtonClicked:",
+          "name": "请人代购",
+          "class": "ProductDetailViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "productdetail_confirm_purchase_orders",
+        "name": "确认代购单页面"
+      },
+      "controls": [
+        {
+          "track": "my_profile",
+          "method": "tableView:cellForRowAtIndexPath:",
+          "name": "代购人和购买人资料入口",
+          "class": "CTOrderConfirmViewInteractor"
+        },
+        {
+          "track": "product",
+          "method": "tableView:cellForRowAtIndexPath:",
+          "name": "产品",
+          "class": "CTOrderConfirmViewInteractor"
+        },
+        {
+          "track": "purchases_increase",
+          "method": "stepperView:userClickAdd:",
+          "name": "购买数量增加",
+          "class": "CartOrderTableViewCell"
+        },
+        {
+          "track": "purchases_reduce",
+          "method": "stepperView:userClickMinus:",
+          "name": "购买数量减少",
+          "class": "CartOrderTableViewCell"
+        },
+        {
+          "track": "confirm_purchase",
+          "method": "onOkButtonClicked:",
+          "name": "确认代购",
+          "class": "CTOrderConfirmViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "productdetail_purchasing_success",
+        "name": "代购成功页面"
+      },
+      "controls": [
+        {
+          "track": "continue_browse",
+          "method": "onContinueClicked:",
+          "name": "继续逛逛",
+          "class": "CTOrderFinishViewInteractor"
+        },
+        {
+          "track": "contact_agent",
+          "method": "onContactClicked:",
+          "name": "找代购人确认",
+          "class": "CTOrderFinishViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "special_preferentia",
+        "name": "特惠专场"
+      },
+      "controls": [
+        {
+          "track": "sweep",
+          "method": "onNavBarScanButtonClick:",
+          "name": "扫一扫",
+          "class": "ActivityViewInteractor"
+        },
+        {
+          "track": "message_center",
+          "method": "onNavBarMessageButtonClick:",
+          "name": "消息中心",
+          "class": "ActivityViewInteractor"
+        },
+        {
+          "track": "category%d",
+          "method": "collectionView:didSelectItemAtIndexPath:",
+          "name": "类目banner",
+          "class": "ActivityCategoryViewInteractor"
+        },
+        {
+          "track": "search_box",
+          "method": "onNavBarSearchBarClick:",
+          "name": "搜索输入框",
+          "class": "ActivityViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "special_preferentia_category_list",
+        "name": "特惠专场-热门精选"
+      },
+      "controls": [
+        {
+          "track": "product%d",
+          "method": "collectionView:didSelectItemAtIndexPath:",
+          "name": "产品",
+          "class": "ActivityDetailViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "my_agent",
+        "name": "我的代购"
+      },
+      "controls": [
+        {
+          "track": "setting",
+          "method": "onNavBarSettingButtonClick:",
+          "name": "设置",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "all_agent",
+          "method": "onAllOrdersButtonClick:",
+          "name": "全部代购",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "agent_be_confirmed",
+          "method": "onToConfirmOrdersButtonClick:",
+          "name": "代购员待确认",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "agent_been_confirmed",
+          "method": "onToBuyOrdersButtonClick:",
+          "name": "代购员已确认",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "agent_bought",
+          "method": "onFinishedOrdersButtonClick:",
+          "name": "代购员已购买",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "my_profile",
+          "method": "onAvatarImageButtonClick:",
+          "name": "我的代购头像",
+          "class": "CTMyViewInteractor"
+        },
+        {
+          "track": "sms_share",
+          "method": "shareQRCode",
+          "name": "短信分享",
+          "class": "CTMyViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "my_agent_list",
+        "name": "我的代购单页面"
+      },
+      "controls": [
+        {
+          "track": "all_agent",
+          "method": "onTabButtonClicked:",
+          "name": "全部代购",
+          "class": "CTOrdersViewInteractor"
+        },
+        {
+          "track": "agent_be_confirmed",
+          "method": "onTabButtonClicked:",
+          "name": "代购员待确认",
+          "class": "CTOrdersViewInteractor"
+        },
+        {
+          "track": "agent_been_confirmed",
+          "method": "onTabButtonClicked:",
+          "name": "代购员已确认",
+          "class": "CTOrdersViewInteractor"
+        },
+        {
+          "track": "agent_bought",
+          "method": "onTabButtonClicked:",
+          "name": "代购员已购买",
+          "class": "CTOrdersViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "my_agent_profile_edit",
+        "name": "我的资料修改页面"
+      },
+      "controls": [
+        {
+          "track": "name_input_box",
+          "method": "tableView:textFieldDidBeginEditing:indexPath:",
+          "name": "姓名输入框",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "name_delete",
+          "method": "tableView:textFieldShouldClear:indexPath:",
+          "name": "姓名删除",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "phone_input_box",
+          "method": "tableView:textFieldDidBeginEditing:indexPath:",
+          "name": "手机输入框",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "phone_delete",
+          "method": "tableView:textFieldShouldClear:indexPath:",
+          "name": "手机删除",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "attention_station",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "村服务点",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "save",
+          "method": "onNavBarRightButtonClick:",
+          "name": "保存",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "agree_modify:ok",
+          "method": "onNavBarLeftButtonClick:",
+          "name": "弹框提示保存-确认",
+          "class": "CTMyDataInteractor"
+        },
+        {
+          "track": "agree_modify:cancel",
+          "method": "onNavBarLeftButtonClick:",
+          "name": "弹框提示保存-取消",
+          "class": "CTMyDataInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "add_station",
+        "name": "添加服务点"
+      },
+      "controls": [
+        {
+          "track": "add",
+          "method": "tableView:cellForRowAtIndexPath:",
+          "name": "添加",
+          "class": "CTAgentAddressInteractor"
+        },
+        {
+          "track": "sweep",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "扫一扫",
+          "class": "CTAgentAddressInteractor"
+        },
+        {
+          "track": "search_station",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "搜索代购点",
+          "class": "CTAgentAddressInteractor"
+        },
+        {
+          "track": "failure_try",
+          "method": "initTableHeaderView:",
+          "name": "定位失败，点击重试",
+          "class": "CTAgentAddressInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "add_station_search",
+        "name": "搜索代购点"
+      },
+      "controls": [
+        {
+          "track": "search_box",
+          "method": "onSearchBarClick:",
+          "name": "搜索输入框",
+          "class": "CTSearchAgentInteractor"
+        },
+        {
+          "track": "search_button",
+          "method": "onSearchButtonClicked:",
+          "name": "搜索按钮",
+          "class": "CTSearchAgentInteractor"
+        },
+        {
+          "track": "text_delete",
+          "method": "searchBar:textDidChange:",
+          "name": "输入框文字删除",
+          "class": "CTSearchAgentInteractor"
+        },
+        {
+          "track": "add",
+          "method": "tableView:cellForRowAtIndexPath:",
+          "name": "添加",
+          "class": "CTSearchAgentInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "my_agent_station_card",
+        "name": "服务点名片页面"
+      },
+      "controls": [
+        {
+          "track": "attention_station",
+          "method": "onAddBtnClick:",
+          "name": "添加服务点",
+          "class": "CTAgentInfoInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "setting",
+        "name": "设置"
+      },
+      "controls": [
+        {
+          "track": "remind_set",
+          "method": "",
+          "name": "提醒设置",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "feedback",
+          "method": "",
+          "name": "意见反馈",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "new_version",
+          "method": "",
+          "name": "检测新版本",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "about us",
+          "method": "",
+          "name": "关于我们",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "logout",
+          "method": "quitBtnClick:",
+          "name": "退出当前账号",
+          "class": "CTAutoSettingVCTL"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "setting-remind",
+        "name": "设置-提醒设置"
+      },
+      "controls": [
+        {
+          "track": "voice_on",
+          "method": "switchSettingCellSwitchDidChange:target:indexPath:",
+          "name": "声音提醒开",
+          "class": "CTRemindViewController"
+        },
+        {
+          "track": "voice_off",
+          "method": "switchSettingCellSwitchDidChange:target:indexPath:",
+          "name": "声音提醒关",
+          "class": "CTRemindViewController"
+        },
+        {
+          "track": "vibration_on",
+          "method": "switchSettingCellSwitchDidChange:target:indexPath:",
+          "name": "震动提醒开",
+          "class": "CTRemindViewController"
+        },
+        {
+          "track": "vibration_off",
+          "method": "switchSettingCellSwitchDidChange:target:indexPath:",
+          "name": "震动提醒关",
+          "class": "CTRemindViewController"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "setting-feedback",
+        "name": "设置-意见反馈"
+      },
+      "controls": [
+        {
+          "track": "input_box",
+          "method": "textViewShouldBeginEditing:",
+          "name": "输入框",
+          "class": "CTFeedBackVCTL"
+        },
+        {
+          "track": "submit_feedback",
+          "method": "sendBtnClick:",
+          "name": "提交反馈",
+          "class": "CTFeedBackVCTL"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "message_center",
+        "name": "消息中心"
+      },
+      "controls": [
+        {
+          "track": "logistics_assistant",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "物流助手",
+          "class": "CTMessageInteractor"
+        },
+        {
+          "track": "agent_assistant",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "代购助手",
+          "class": "CTMessageInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "message_cente_logistics_assistant",
+        "name": "消息中心-物流助手"
+      },
+      "controls": []
+    },
+    {
+      "page": {
+        "track": "message_cente_agent_assistant",
+        "name": "消息中心-代购助手"
+      },
+      "controls": []
+    },
+    {
+      "_comments": "通知栏打点",
+       "page": {
+        "name": "通知栏打点"
+      },
+     "controls": [
+        {
+          "track": "notification_bar_atm_message",
+          "method": "handleNotification:forState:completionHandler:",
+          "name": "atm消息",
+          "class": "NotificationsManager"
+        },
+        {
+          "track": "notification_bar_system_message",
+          "method": "",
+          "name": "系统消息",
+          "class": "",
+          "ignored": true
+        },
+        {
+          "track": "notification_bar_logistics_message",
+          "method": "handleNotification:forState:completionHandler:",
+          "name": "物流消息",
+          "class": "NotificationsManager"
+        },
+        {
+          "track": "notification_bar_agent_message",
+          "method": "handleNotification:forState:completionHandler:",
+          "name": "代购消息",
+          "class": "NotificationsManager"
+        },
+        {
+          "track": "notification_bar_kicked_message",
+          "method": "",
+          "name": "被踢消息",
+          "class": "",
+          "ignored": true
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "atm_talking",
+        "name": "聊天对话框"
+      },
+      "controls": [
+        {
+          "track": "input_voice",
+          "method": "touchesBegan:withEvent:",
+          "name": "语音输入",
+          "class": "ATMVoiceBoardView"
+        },
+        {
+          "track": "cancel_voice",
+          "method": "touchesEnded:withEvent:",
+          "name": "取消语音",
+          "class": "ATMVoiceBoardView"
+        },
+        {
+          "track": "read_voice",
+          "method": "setupCellHandler",
+          "name": "读语音",
+          "class": "ChatViewController"
+        },
+        {
+          "track": "keyboard",
+          "method": "onInputModeChange",
+          "name": "切换到键盘",
+          "class": "AutoSizeInputBar"
+        },
+        {
+          "track": "input_box",
+          "method": "inputViewClick",
+          "name": "输入框点击",
+          "class": "AutoSizeInputBar"
+        },
+        {
+          "track": "voice",
+          "method": "showVoiceBoard:withAnimation:",
+          "name": "切换到语音",
+          "class": "AutoSizeInputBar"
+        },
+        {
+          "track": "entrance_picture",
+          "method": "showFaceView:",
+          "name": "添加图片、表情入口",
+          "class": "AutoSizeInputBar"
+        },
+        {
+          "track": "expression",
+          "method": "ALFaceBoardDidClickEmotion:code:",
+          "name": "表情笑脸",
+          "class": "ATMAttachView"
+        },
+        {
+          "track": "quick_phrases",
+          "method": "",
+          "name": "快捷短语",
+          "class": ""
+        },
+        {
+          "track": "add_quick_phrases",
+          "method": "ActionAddBtn:",
+          "name": "添加快捷短语",
+          "class": "ATMFormalTextView"
+        },
+        {
+          "track": "add_quick_phrases:ok",
+          "method": "alertView:clickedButtonAtIndex:",
+          "name": "添加快捷短语-确定",
+          "class": "ATMFormalTextView"
+        },
+        {
+          "track": "add_quick_phrases:cancel",
+          "method": "alertView:clickedButtonAtIndex:",
+          "name": "添加快捷短语-取消",
+          "class": "ATMFormalTextView"
+        },
+        {
+          "track": "taking_picture",
+          "method": "ActionClickMore:",
+          "name": "拍照",
+          "class": "ATMAttachView"
+        },
+        {
+          "track": "picture",
+          "method": "ActionClickMore:",
+          "name": "图片",
+          "class": "ATMAttachView"
+        },
+        {
+          "track": "conversation",
+          "method": "rightBarBtnClick:",
+          "name": "会话入口（IOS）",
+          "class": "CTChatViewController"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "atm_conversation",
+        "name": "会话"
+      },
+      "controls": [
+        {
+          "track": "delete_session",
+          "method": "tableView:commitEditingStyle:forRowAtIndexPath:",
+          "name": "删除会话",
+          "class": "SessionViewInteractor"
+        },
+        {
+          "track": "contact",
+          "method": "rightBarBtnClick:",
+          "name": "联系人",
+          "class": "CTSessionViewController"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "atm_friends",
+        "name": "好友列表"
+      },
+      "controls": [
+        {
+          "track": "input_box",
+          "method": "searchBarShouldBeginEditing:",
+          "name": "搜索框",
+          "class": "FriendListViewController"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "agent_car_home",
+        "name": "代购车首页"
+      },
+      "controls": [
+        {
+          "track": "my_profile",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "我的资料入口",
+          "class": "CartViewInteractor"
+        },
+        {
+          "track": "product_tick",
+          "method": "cartOrderCell:didChangeChecked:",
+          "name": "选择商品打钩",
+          "class": "CartViewInteractor"
+        },
+        {
+          "track": "number_add_reduce",
+          "method": "cartOrderCell:didChangeAmount:",
+          "name": "数量增加减少",
+          "class": "CartViewInteractor"
+        },
+        {
+          "track": "select_all",
+          "method": "onSelectAllButtonClicked:",
+          "name": "全选",
+          "class": "CartViewInteractor"
+        },
+        {
+          "track": "send_agent",
+          "method": "onOkButtonClicked:",
+          "name": "发给代购员",
+          "class": "CartViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "search_home",
+        "name": "搜索页面"
+      },
+      "controls": [
+        {
+          "track": "search_box",
+          "method": "searchBarTextDidBeginEditing:",
+          "name": "搜索输入框",
+          "class": "SearchInputViewInteractor"
+        },
+        {
+          "track": "search_button",
+          "method": "onSearchButtonClicked:",
+          "name": "搜索按钮",
+          "class": "SearchInputViewInteractor"
+        },
+        {
+          "track": "text_delete",
+          "method": "searchBar:textDidChange:",
+          "name": "输入框文字删除",
+          "class": "SearchInputViewInteractor"
+        },
+        {
+          "track": "historical_search",
+          "method": "tableView:didSelectRowAtIndexPath:",
+          "name": "历史记录",
+          "class": "SearchInputViewInteractor"
+        },
+        {
+          "track": "clear_history",
+          "method": "onClearHistoryButtonClicked:",
+          "name": "清楚历史记录",
+          "class": "SearchInputViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "search_results",
+        "name": "搜索结果页面"
+      },
+      "controls": [
+        {
+          "track": "search_box",
+          "method": "onSearchBarClicked:",
+          "name": "搜索输入框",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "comprehensive_order",
+          "method": "searchSortToolbar:didChangeSortType:",
+          "name": "综合排序",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "sales_order",
+          "method": "searchSortToolbar:didChangeSortType:",
+          "name": "销量排序",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "price_order_up",
+          "method": "searchSortToolbar:didChangeSortType:",
+          "name": "价格排序升",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "price_order_down",
+          "method": "searchSortToolbar:didChangeSortType:",
+          "name": "价格排序降",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "back_top",
+          "method": "onScrollToTopButtonClicked:",
+          "name": "返回顶部",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "product",
+          "method": "collectionView:didSelectItemAtIndexPath:",
+          "name": "点击商品",
+          "class": "SearchResultViewInteractor"
+        },
+        {
+          "track": "filter",
+          "method": "openFilter",
+          "name": "筛选",
+          "class": "SearchResultViewInteractor"
+        }
+      ]
+    },
+    {
+      "page": {
+        "track": "sweep",
+        "name": "二维码扫描"
+      },
+      "controls": [
+        {
+          "track": "album",
+          "method": "onNavBarRightButtonClick:",
+          "name": "相册",
+          "class": "QRCodeInteractor"
+        }
+      ]
+    }
+  ]
+}
